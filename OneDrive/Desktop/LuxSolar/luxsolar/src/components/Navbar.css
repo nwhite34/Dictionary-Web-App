@@ -1,0 +1,55 @@
+/* Navbar.css */
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 10; /* Ensure it stays on top */
+  }
+  
+  .hamburger .line {
+    background-color: white; /* Ensure lines are white */
+    height: 2px;
+    width: 24px;
+    transition: all 0.3s ease;
+    position: absolute;
+  }
+  
+  .hamburger .line:nth-child(1) {
+    top: 0;
+  }
+  
+  .hamburger .line:nth-child(2) {
+    top: 10px;
+  }
+  
+  .hamburger .line:nth-child(3) {
+    top: 20px;
+  }
+  
+  .hamburger.open .line:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  
+  .hamburger.open .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open .line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+  
+  .phone-icon {
+    margin-right: 8px;
+    font-size: 1.25rem; /* Adjust the size as needed */
+    vertical-align: middle;
+    color: white !important; /* Ensure the icon is white */
+  }
+  
